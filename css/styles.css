@@ -387,12 +387,24 @@ body{
 .customer-link{
     width: 100%;
     height: 100%;
-    border: 1px solid #AFB1B8;
+    border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgba(175, 177, 184, 1);
 }
+
+.customer-soc-ikon{
+    fill: currentColor;
+}
+
+.customer-link:hover,
+.customer-link:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);   
+}
+
 /* ------------------FOOTER----------------- */
 
 .footer{
@@ -429,6 +441,46 @@ margin-bottom: 9px;
 .footer-contacts:hover,
 .footer-contacts:focus{
     color: var(--accent-color);
+}
+
+.footer-soc-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark-background-text-color);
+    margin-bottom: 20px;
+}
+.footer-soc-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-soc-item{
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background: var(--accent-color); 
+}
+
+.footer-soc-ikon{
+    fill: var(--dark-background-text-color);
 }
 
 /* ------------------PORTFOLIO----------------- */
