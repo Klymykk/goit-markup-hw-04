@@ -239,13 +239,28 @@ body{
     width: 270px;
 }
 
+.benefits-item::before{
+    content:"";
+    display: block;
+    height: 120px;
+    background-color: rgba(245, 244, 250, 1);
+    margin-bottom: 30px;
+    /* background-image: url(../images/astronaut\ 1.svg); */
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before{
+    background-image: url(../images/icons.svg#icon-astronaut);
+}  
+
 .benefits-title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
-
     margin-bottom: 10px;
 }
 
@@ -420,7 +435,7 @@ body{
 }
 
 .footer-contacts-item:not(:last-child) {
-margin-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-contacts{
@@ -441,6 +456,12 @@ margin-bottom: 9px;
 .footer-contacts:hover,
 .footer-contacts:focus{
     color: var(--accent-color);
+}
+
+.footer-sections{
+    display: flex;
+    gap: 94px;
+    align-items: baseline;
 }
 
 .footer-soc-title{
