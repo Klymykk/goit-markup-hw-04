@@ -245,15 +245,24 @@ body{
     height: 120px;
     background-color: rgba(245, 244, 250, 1);
     margin-bottom: 30px;
-    /* background-image: url(../images/astronaut\ 1.svg); */
     background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-antenna::before{
-    background-image: url(../images/icons.svg#icon-astronaut);
+.icon-antenna::before {
+    background-image: url(../images/icons.svg#icon-antenna);
 }  
+.icon-clock::before{
+    background-image: url(../images/icons.svg#icon-clock);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/icons.svg#icon-diagram);
+}
+.icon-astronaut::before{
+    background-image: url(../images/icons.svg#icon-astronaut);
+}
 
 .benefits-title{
     font-size: 14px;
